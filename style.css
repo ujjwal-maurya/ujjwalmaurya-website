@@ -1,0 +1,160 @@
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+body {
+
+    font-family: Georgia, serif;
+
+    color: #111;
+
+    background: #ffffff;
+
+    padding: 70px;
+
+}
+
+.container {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: flex-start;
+
+}
+
+.content {
+
+    width: 75%;
+
+}
+
+.sidebar {
+
+    width: 20%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-end;
+
+}
+
+.name {
+
+    font-size: 32px;
+
+    margin-bottom: 35px;
+
+}
+
+.sidebar a {
+
+    text-decoration: none;
+
+    color: #111;
+
+    font-size: 24px;
+
+}
+
+.sidebar a:hover {
+
+    text-decoration: underline;
+
+}
+
+.profile {
+
+    width: 240px;
+
+    height: 240px;
+
+    object-fit: cover;
+
+    object-position: center top;
+
+    display: block;
+
+}
+
+.email {
+
+    margin-top: 18px;
+
+    font-size: 24px;
+
+}
+
+.email a {
+
+    color: #111;
+
+    text-decoration: none;
+
+}
+
+.email a:hover {
+
+    text-decoration: underline;
+
+}
+@media (max-width: 768px) {
+
+    body {
+
+        padding: 30px;
+
+    }
+
+    .container {
+
+        flex-direction: column;
+
+        gap: 60px;
+
+    }
+
+    .content {
+
+        width: 100%;
+
+    }
+
+    .sidebar {
+
+        width: 100%;
+
+        align-items: flex-start;
+
+    }
+
+    .name {
+
+        margin-bottom: 20px;
+
+    }
+
+    .profile {
+
+        width: 200px;
+
+        height: 200px;
+
+    }
+
+    .email {
+
+        font-size: 20px;
+
+    }
+
+}
