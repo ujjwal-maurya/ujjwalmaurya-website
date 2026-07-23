@@ -1,20 +1,10 @@
-const about = document.getElementById("about");
-const bookshelf = document.getElementById("bookshelf");
+document.querySelectorAll('a[href^="#"]').forEach((link) => {
+    link.addEventListener("click", (event) => {
+        const target = document.querySelector(link.getAttribute("href"));
 
-document.getElementById("aboutLink").addEventListener("click", function (event) {
+        if (!target) return;
 
-    event.preventDefault();
-
-    about.style.display = "block";
-    bookshelf.style.display = "none";
-
-});
-
-document.getElementById("booksLink").addEventListener("click", function (event) {
-
-    event.preventDefault();
-
-    about.style.display = "none";
-    bookshelf.style.display = "block";
-
+        event.preventDefault();
+        target.scrollIntoView({ behavior: "smooth" });
+    });
 });

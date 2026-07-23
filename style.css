@@ -107,6 +107,32 @@ body {
     text-decoration: underline;
 
 }
+
+.about {
+
+    margin-top: 48px;
+
+    max-width: 560px;
+
+    font-size: 20px;
+
+    line-height: 1.5;
+
+}
+
+.about h1 {
+
+    margin-bottom: 10px;
+
+    font-size: 28px;
+
+}
+
+html {
+
+    scroll-behavior: smooth;
+
+}
 @media (max-width: 768px) {
 
     body {
@@ -154,6 +180,12 @@ body {
     .email {
 
         font-size: 20px;
+
+    }
+
+    .about {
+
+        font-size: 18px;
 
     }
 
