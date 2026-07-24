@@ -56,22 +56,6 @@ body {
 
 }
 
-.sidebar a {
-
-    text-decoration: none;
-
-    color: #111;
-
-    font-size: 24px;
-
-}
-
-.sidebar a:hover {
-
-    text-decoration: underline;
-
-}
-
 .profile {
 
     width: 240px;
@@ -105,26 +89,6 @@ body {
 .email a:hover {
 
     text-decoration: underline;
-
-}
-
-.about {
-
-    margin-top: 48px;
-
-    max-width: 560px;
-
-    font-size: 20px;
-
-    line-height: 1.5;
-
-}
-
-.about h1 {
-
-    margin-bottom: 10px;
-
-    font-size: 28px;
 
 }
 
@@ -180,12 +144,6 @@ html {
     .email {
 
         font-size: 20px;
-
-    }
-
-    .about {
-
-        font-size: 18px;
 
     }
 
