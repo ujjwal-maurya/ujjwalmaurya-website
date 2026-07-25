@@ -127,6 +127,20 @@ body {
 
 }
 
+.links-list a {
+
+    color: #111;
+
+    text-decoration: none;
+
+}
+
+.links-list a:hover {
+
+    text-decoration: underline;
+
+}
+
 .visually-hidden {
 
     position: absolute;
