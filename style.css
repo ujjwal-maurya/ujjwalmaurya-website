@@ -46,13 +46,40 @@ body {
 
     align-items: flex-end;
 
+    gap: 18px;
+
 }
 
-.name {
+.nav-button {
 
-    font-size: 32px;
+    border: 0;
 
-    margin-bottom: 35px;
+    padding: 0;
+
+    color: #111;
+
+    background: transparent;
+
+    font: inherit;
+
+    font-size: 24px;
+
+    cursor: pointer;
+
+}
+
+.nav-button:hover,
+.nav-button[aria-pressed="true"] {
+
+    text-decoration: underline;
+
+}
+
+.nav-button:focus-visible {
+
+    outline: 2px solid #111;
+
+    outline-offset: 4px;
 
 }
 
@@ -92,6 +119,36 @@ body {
 
 }
 
+.links-list {
+
+    list-style: none;
+
+    font-size: 24px;
+
+}
+
+.visually-hidden {
+
+    position: absolute;
+
+    width: 1px;
+
+    height: 1px;
+
+    padding: 0;
+
+    margin: -1px;
+
+    overflow: hidden;
+
+    clip: rect(0, 0, 0, 0);
+
+    white-space: nowrap;
+
+    border: 0;
+
+}
+
 html {
 
     scroll-behavior: smooth;
@@ -127,12 +184,6 @@ html {
 
     }
 
-    .name {
-
-        margin-bottom: 20px;
-
-    }
-
     .profile {
 
         width: 200px;
@@ -142,6 +193,13 @@ html {
     }
 
     .email {
+
+        font-size: 20px;
+
+    }
+
+    .nav-button,
+    .links-list {
 
         font-size: 20px;
 

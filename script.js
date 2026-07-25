@@ -1,10 +1,16 @@
-document.querySelectorAll('a[href^="#"]').forEach((link) => {
-    link.addEventListener("click", (event) => {
-        const target = document.querySelector(link.getAttribute("href"));
+const navigationButtons = document.querySelectorAll(".nav-button");
+const panels = document.querySelectorAll(".panel");
 
-        if (!target) return;
+navigationButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+        const selectedPanel = document.getElementById(button.dataset.panel);
 
-        event.preventDefault();
-        target.scrollIntoView({ behavior: "smooth" });
+        panels.forEach((panel) => {
+            panel.hidden = panel !== selectedPanel;
+        });
+
+        navigationButtons.forEach((navigationButton) => {
+            navigationButton.setAttribute("aria-pressed", navigationButton === button);
+        });
     });
 });
