@@ -12,6 +12,8 @@ body {
 
     font-family: Georgia, serif;
 
+    font-size: 18px;
+
     color: #111;
 
     background: #ffffff;
@@ -46,7 +48,7 @@ body {
 
     align-items: flex-end;
 
-    gap: 18px;
+    gap: 8px;
 
 }
 
@@ -62,7 +64,7 @@ body {
 
     font: inherit;
 
-    font-size: 24px;
+    font-size: 18px;
 
     cursor: pointer;
 
@@ -101,7 +103,7 @@ body {
 
     margin-top: 12px;
 
-    font-size: 24px;
+    font-size: 18px;
 
 }
 
@@ -111,7 +113,7 @@ body {
 
     margin-top: 18px;
 
-    font-size: 24px;
+    font-size: 18px;
 
     line-height: 1.4;
 
@@ -135,7 +137,7 @@ body {
 
     list-style: none;
 
-    font-size: 24px;
+    font-size: 18px;
 
     line-height: 1.4;
 
@@ -144,12 +146,6 @@ body {
 .links-list li + li {
 
     margin-top: 10px;
-
-}
-
-.links-list.books-list {
-
-    font-size: 18px;
 
 }
 
@@ -229,25 +225,6 @@ html {
         width: 200px;
 
         height: 200px;
-
-    }
-
-    .email {
-
-        font-size: 20px;
-
-    }
-
-    .intro {
-
-        font-size: 20px;
-
-    }
-
-    .nav-button,
-    .links-list {
-
-        font-size: 20px;
 
     }
 
